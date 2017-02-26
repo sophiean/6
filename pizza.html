@@ -1,0 +1,121 @@
+<html>
+  <head>
+    
+    <script src="pizza.css" defer> </script>
+  
+<!-- Latest compiled and minified CSS -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="pizza.js" defer></script>
+
+  </head>
+
+
+<script>
+
+ function Order() {
+    var myString = document.getElementById("toppings").value;
+    var Order = myString.split(",");
+
+    for (var i=0; i<Order.length; i++) {
+        Order [i] = Order[i].trim()
+
+        console.log(Order[i]);
+    }
+}
+</script>
+<body>
+  <p id="target">Sophie's Pizza Parlour </p>
+</body>
+
+<div class=toppings>
+  Pepperoni
+</div>
+
+<img src="pep.jpg" alt="you want the pep" style="width:304px;height:228px;">
+
+
+<div class="toppings">
+  Sprinkles
+</div>
+<img src="sprinkles.jpg" alt="a sweet sauce" style="width:304px;height:228px;">
+
+<div class="toppings">
+  Arugula
+</div>
+<img src="arugula.jpg" alt="a healthy green" style="width:304px;height:228px;">
+
+
+<script type="text/javascript">
+  var clicks = 0;
+
+  function onClick() {
+    clicks += 1;
+    document.getElementById("clicks").innerHTML = clicks;
+  };
+
+</script>
+
+<p id="ttotal">Toppings Total: <a id="clicks">0</a></p>
+<button type="button" onClick="onClick()">
+
+  Add Pepperoni </button>
+
+
+<script type="text/javascript">
+  var clicks = 0;
+
+  function onClick() {
+    clicks += 1;
+    document.getElementById("clicks").innerHTML = clicks;
+  };
+
+</script>
+<button type="button" onClick="onClick()">
+  Add Sprinkles </button>
+
+
+<script type="text/javascript">
+  var clicks = 0;
+
+  function onClick() {
+    clicks += 1;
+    document.getElementById("clicks").innerHTML = clicks;
+  };
+
+</script>
+<button type="button" onClick="onClick()">
+  Add Arugula </button>
+<br>
+</ >
+<div id=toppings>
+  Add other toppings
+</div>
+
+<input id=Order> </input>
+
+<!--SNEAKY COUNTER-->
+
+<script type="text/javascript">
+  var clicks = 0;
+
+  function onClick() {
+    clicks += 1;
+    document.getElementById("clicks").innerHTML = clicks;
+  };
+
+</script>
+
+<button type="button" onClick="onClick()">
+
+Add Topping </button>
+</html>

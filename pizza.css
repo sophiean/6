@@ -1,0 +1,38 @@
+.btn1 {
+  color: red;
+}
+
+#target {
+  font: Calibri;
+  font-size: 40px;
+  color: cornflowerblue
+}
+
+.spread {
+  display: flex;
+  justify-content: space-around;
+}
+
+.toppings {
+  color: blue;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#toppings {
+  color: red;
+  font-size: 14px;
+}
+
+#ttotal {
+  color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20pt;
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  
+}
